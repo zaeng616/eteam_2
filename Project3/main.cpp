@@ -1,17 +1,22 @@
 #include "gmock/gmock.h"
 class Cal {
 public:
-
+	double getDivide(double a, double b) {
+		if (b == 0)
+			return -1;
+		return (a / b);
+  }
+  
 	double getGop(double a, double b) {
 		return a * b;
-
+  }
+  
 	double getSumSum(double a, double b, double c) {
 		return a + b + c;
   }
   
 	double getGopgopgop(double a, double b, double c) {
 		return a * b * c;
-
 	}
 };
 
