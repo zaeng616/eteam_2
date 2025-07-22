@@ -62,6 +62,11 @@ TEST(t1, zegop) {
 	EXPECT_EQ(cal.getZegop(3), 9);
 }
 
+TEST(t1, sum) {
+	Cal cal;
+	EXPECT_EQ(cal.getSum(1.2, 2.3), 3.5);
+}
+
 int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
