@@ -2,6 +2,11 @@
 
 class Cal {
 public:
+
+	double getMinus(double a, double b) { 
+		return a - b; 
+	};
+
 	double getSum(double a, double b) {
 		return a + b;
 	}
@@ -23,10 +28,20 @@ public:
 	double getGopgopgop(double a, double b, double c) {
 		return a * b * c;
 	}
+  
+  double getZegop(int a) {
+		return (a * a);
+  }
+ 
 };
 
 TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
+}
+
+TEST(t1, zegop) {
+	Cal cal;
+	EXPECT_EQ(cal.getZegop(3), 9);
 }
 
 int main() {
