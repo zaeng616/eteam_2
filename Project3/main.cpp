@@ -21,10 +21,6 @@ public:
 		return (a / b);
 	}
 
-	double getGop(double a, double b) {
-		return a * b;
-	}
-
 	double getSumSum(double a, double b, double c) {
 		return a + b + c;
 	}
@@ -36,7 +32,10 @@ public:
 };
 
 TEST(t1, t2) {
+	Cal cal;
 	EXPECT_EQ(1, 1);
+	EXPECT_EQ(65535, cal.getMinus(65536, 1));
+	EXPECT_EQ(-65535, cal.getMinus(1, 65536));
 }
 int main() {
 	::testing::InitGoogleMock();
