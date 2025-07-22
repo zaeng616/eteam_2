@@ -46,7 +46,10 @@ TEST(TestGetGop, TC2) {
 }
 
 TEST(t1, t2) {
+	Cal cal;
 	EXPECT_EQ(1, 1);
+	EXPECT_EQ(65535, cal.getMinus(65536, 1));
+	EXPECT_EQ(-65535, cal.getMinus(1, 65536));
 }
 
 TEST(t1, testGopGopGop) {
