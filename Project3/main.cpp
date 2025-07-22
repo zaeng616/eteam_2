@@ -1,7 +1,7 @@
 #include "gmock/gmock.h"
 class Cal {
 public:
-	int getDivide(int a, int b) {
+	double getDivide(double a, double b) {
 		if (b == 0)
 			return -1;
 		return (a / b);
