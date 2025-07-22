@@ -32,6 +32,10 @@ public:
 TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
+TEST(t1, testGopGopGop) {
+	Cal cal;
+	EXPECT_EQ(cal.getGopgopgop(2, 3, 4), 24);
+}
 int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
