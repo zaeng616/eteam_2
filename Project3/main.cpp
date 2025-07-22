@@ -16,10 +16,6 @@ public:
 		return (a / b);
 	}
 
-	double getGop(double a, double b) {
-		return a * b;
-	}
-
 	double getSumSum(double a, double b, double c) {
 		return a + b + c;
 	}
@@ -32,6 +28,18 @@ public:
 TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
+
+TEST(t1, divide) {
+	Cal c;
+	
+	EXPECT_EQ(3, c.getDivide(6, 2));
+	EXPECT_EQ(-1, c.getDivide(3, 0));
+
+	double expect = static_cast<double>(2) / 3;
+	double actual = c.getDivide(2, 3);
+	EXPECT_EQ(expect, actual);
+}
+
 int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
