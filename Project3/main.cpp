@@ -1,8 +1,15 @@
 #include "gmock/gmock.h"
 class Cal {
-
+public:
+	int getMinus(int a, int b) { 
+		return a - b; 
+	};
 };
 TEST(t1, t2) {
+	Cal cal;
+
+	EXPECT_EQ(65535, cal.getMinus(65536, 1));
+	EXPECT_EQ(-65535, cal.getMinus(1, 65536));
 	EXPECT_EQ(1, 1);
 }
 int main() {
