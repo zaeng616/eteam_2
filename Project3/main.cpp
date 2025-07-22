@@ -1,8 +1,17 @@
 #include "gmock/gmock.h"
 class Cal {
-	int getZegop(int a) {
-		return (a * a);
+public:
+	double getSumSum(double a, double b, double c) {
+		return a + b + c;
+  }
+  
+	double getGopgopgop(double a, double b, double c) {
+		return a * b * c;
 	}
+  
+  int getZegop(int a) {
+		return (a * a);
+  }
 };
 TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
