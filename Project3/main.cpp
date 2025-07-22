@@ -1,7 +1,7 @@
 #include "gmock/gmock.h"
 class Cal {
 public:
-	int getMinus(int a, int b) { 
+	double getMinus(double a, double b) { 
 		return a - b; 
 	};
 };
