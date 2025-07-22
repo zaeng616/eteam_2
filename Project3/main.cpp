@@ -35,6 +35,16 @@ public:
  
 };
 
+TEST(TestGetGop, TC1) {
+	Cal cal;
+	EXPECT_EQ(2 * 3, cal.getGop(2, 3));
+}
+
+TEST(TestGetGop, TC2) {
+	Cal cal;
+	EXPECT_EQ(6.4, cal.getGop(2, 3.2));
+}
+
 TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
