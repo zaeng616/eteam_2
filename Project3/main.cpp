@@ -21,10 +21,6 @@ public:
 		return (a / b);
 	}
 
-	double getGop(double a, double b) {
-		return a * b;
-	}
-
 	double getSumSum(double a, double b, double c) {
 		return a + b + c;
 	}
