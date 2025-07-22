@@ -39,6 +39,11 @@ TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
 
+TEST(t1, testGopGopGop) {
+	Cal cal;
+	EXPECT_EQ(cal.getGopgopgop(2, 3, 4), 24);
+}
+
 TEST(t1, zegop) {
 	Cal cal;
 	EXPECT_EQ(cal.getZegop(3), 9);
