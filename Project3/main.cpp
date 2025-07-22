@@ -1,7 +1,11 @@
 #include "gmock/gmock.h"
 class Cal {
-
+public:
+	double getGop(double a, double b) {
+		return a * b;
+	}
 };
+
 TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
