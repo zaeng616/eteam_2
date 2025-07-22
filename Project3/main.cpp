@@ -5,6 +5,14 @@ public:
 	double getSum(double a, double b) {
 		return a + b;
 	}
+
+	double getSumSum(double a, double b, double c) {
+		return a + b + c;
+	}
+  
+	double getGopgopgop(double a, double b, double c) {
+		return a * b * c;
+	}
 };
 
 TEST(t1, t2) {
