@@ -2,6 +2,11 @@
 
 class Cal {
 public:
+
+	double getMinus(double a, double b) { 
+		return a - b; 
+	};
+
 	double getSum(double a, double b) {
 		return a + b;
 	}
@@ -27,6 +32,7 @@ public:
 	double getGopgopgop(double a, double b, double c) {
 		return a * b * c;
 	}
+
 };
 
 TEST(t1, t2) {
