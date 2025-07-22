@@ -2,7 +2,7 @@
 
 class Cal {
 public:
-	int getSum(int a, int b) {
+	double getSum(double a, double b) {
 		return a + b;
 	}
 };
