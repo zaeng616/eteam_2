@@ -28,10 +28,10 @@ public:
 	double getGopgopgop(double a, double b, double c) {
 		return a * b * c;
 	}
-  
-  double getZegop(int a) {
+
+	double getZegop(int a) {
 		return (a * a);
-  }
+	}
  
 };
 
